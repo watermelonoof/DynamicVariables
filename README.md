@@ -13,7 +13,7 @@ Simple extension for adding dynamic variables in AI2 and its disturbution.
 		<td>
 			<img src = "assets/WhenErrorOccurred.png">
 		</td>
-		<td>Raises when any error occured. All errors explained in <a href="">Errors</a>.</td>
+		<td>Raises when any error occured. All errors explained in <a href="https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/blob/master/README.md#errors">Errors</a>.</td>
 		<td align = "center">N/A</td>
 	</tr>
 	<tr>
