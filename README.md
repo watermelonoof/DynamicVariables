@@ -251,3 +251,34 @@ Simple extension for adding dynamic variables in AI2 and its disturbution.
 		</table>
 	
 # Errors
+
+<table>
+	<tr>
+		<th>Error Code</th>
+		<th>Error</th>
+	</tr>
+	<tr>
+		<td><0/td>
+		<td>Exception error</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>List cannot be empty</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Length of both list must be same</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Old variable doesn't exist</td>
+	</tr>
+</table>
+	
+# Change Log
+<small><i>No change log yet ;)</i></small>
+
+# Build Extensions
+
+
+# Reference
