@@ -258,7 +258,7 @@ Simple extension for adding dynamic variables in AI2 and its disturbution.
 		<th>Error</th>
 	</tr>
 	<tr>
-		<td><0/td>
+		<td>0</td>
 		<td>Exception error</td>
 	</tr>
 	<tr>
