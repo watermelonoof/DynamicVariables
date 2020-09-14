@@ -279,6 +279,6 @@ Simple extension for adding dynamic variables in AI2 and its disturbution.
 <small><i>No change log yet ;)</i></small>
 
 # Build Extensions
-
+Go to [this](https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/tree/master/BuildExtension) directory for the code. Check out the [wiki page](https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/wiki/Compiling-Extension) if you don't know how to compile.
 
 # Reference
