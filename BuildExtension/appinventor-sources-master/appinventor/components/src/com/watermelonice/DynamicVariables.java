@@ -1,4 +1,4 @@
-package com.watermelonice.DynamicVariables;
+package com.watermelonice;
 
 import com.google.appinventor.components.annotations.*;
 import com.google.appinventor.components.runtime.*;
