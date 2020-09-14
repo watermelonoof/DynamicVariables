@@ -1,4 +1,4 @@
-# DynamicVariable-Kodular-AI2-Extension
+# DynamicVariables-Kodular-AI2-Extension
 Simple extension for adding dynamic variables in AI2 and its disturbution.
 
 # Blocks
@@ -282,3 +282,5 @@ Simple extension for adding dynamic variables in AI2 and its disturbution.
 Go to [this](https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/tree/master/BuildExtension) directory for the code. Check out the [wiki page](https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/wiki/Compiling-Extension) if you don't know how to compile.
 
 # Reference
+[Kodular Community](https://community.kodular.io/t/free-open-source-dynamic-variables-create-dynamic-variables/83592)
+[MIT AI2 Community](https://community.appinventor.mit.edu/t/free-open-source-dynamic-variables-create-dynamic-variables/16321)
