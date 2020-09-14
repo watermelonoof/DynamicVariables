@@ -1,7 +1,7 @@
 # Introduction
 Here you can compile your own version of my extension.
 
-# Preparation
+# Steps
 
 ## Step 0
 Get your favourite IDE/text editor. (I recommend VS code. If you want, install the VS code for Java installer [here](https://code.visualstudio.com/docs/languages/java))
@@ -40,7 +40,7 @@ If you see `BUILD SUCESSFUL`, that's mean you have sucessfully compile the exten
 If you see `BUILD FAILED`, that's mean there're something wrong in your code.
 
 
-### <b>If you are using "extensions-template",</b>
+### <b>If you are using "extension-template",</b>
 
 The .java file is located in "...\extension-template\src\com\watermelonice\DynamicVariables"
 
@@ -50,3 +50,7 @@ Or you can open `cmd`, `powershell`, `git bash`, or any other terminal directly,
 If you see `BUILD SUCESSFUL`, that's mean you have sucessfully compile the extension! The aix file will be located in ".../extension-template/out".
 
 If you see `BUILD FAILED`, that's mean there're something wrong in your code.
+
+# Conclusion
+Thanks for reading this. If you have anything not understand, please ask here.
+If you see any typo, tell me as well.
