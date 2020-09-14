@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# Launch the Build Server.
+# This script must be run on the Build Server machine.
+# You first need to copy BuildServer.tar to that machine.  Then
+# untar it with
+# tar -xf BuildServer.tar
+# Then run this script
+# The output log will be written in the directory where the script is run
+
+export LANG=en_US.UTF-8
+
+EXECUTE=true
+LAUNCH_BUILDSERVER_OPT=
+LAUNCH_BUILDSERVER_LOG_PATH="../buildserver-log.out"
+while true; do
+  case "$1" in
+    -c | --childProcessRamMb )
+      LAUNCH_BUILDSERVER_OPT="$LAUNCH_BUILDSERVER_OPT --childProcessRamM $2"; shift 2 ;;
+    -m | --maxSimultaneousBuilds )
+      LAUNCH_BUILDSERVER_OPT="$LAUNCH_BUILDSERVER_OPT --maxSimultaneousBuilds $2"; shift 2 ;;
+    -p | --port)
+      LAUNCH_BUILDSERVER_OPT="$LAUNCH_BUILDSERVER_OPT --port $2"; shift 2;;
+    -r | --requiredHosts )
+      LAUNCH_BUILDSERVER_OPT="$LAUNCH_BUILDSERVER_OPT --requiredHosts $2"; shift 2;;
+    -d | --debug )
+      LAUNCH_BUILDSERVER_OPT="$LAUNCH_BUILDSERVER_OPT --debug $2"; shift 2;;
+    -s | --shutdownToken )
+      LAUNCH_BUILDSERVER_OPT="$LAUNCH_BUILDSERVER_OPT --shutdownToken $2"; shift 2;;
+    -l | --logPath )
+      LAUNCH_BUILDSERVER_LOG_PATH=$2; shift 2;;
+    -h | --help )
+      echo "Usage: [-c , --childProcessRamM ] [-m , --maxSimultaneousBuilds ] [-p , --port ] [-r , --requiredHosts ] [-d , --debug ] [-l , --logPath (ie. /home/buildserver/buildserver-log.out) ]"; EXECUTE=false; break ;;
+    -- ) EXECUTE=false; break ;;
+    - ) EXECUTE=false; break ;;
+    * ) break ;;
+  esac
+done
+
+if $EXECUTE; then
+cd `dirname $0`/lib;
+
+# Revised 10/24 to add updated jackson and guava libs
+# Revised 10/25 to add commons-io-2.0.1.jar
+# Revised 07/03 to add bcprov-jdk15on-149.jar and bcpkix-jdk15on-149.jar:sdklib.jar to support Android SDK 4.2.2
+# Revised 2018/04/20 to switch to wildcard inclusion of jars in classpath
+
+exec nohup java -Xmx1828m -cp "*" -Dfile.encoding=UTF-8 com.google.appinventor.buildserver.BuildServer --dexCacheDir /tmp/dxcache $LAUNCH_BUILDSERVER_OPT &> $LAUNCH_BUILDSERVER_LOG_PATH &
+fi
