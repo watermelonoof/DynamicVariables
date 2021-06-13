@@ -50,7 +50,7 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 		<td>
 			<img src = "assets/InitializeListOfVariables.png">
 		</td>
-		<td>Initialize list of variables. Both list mustn't be empty. \"names\" and \"values\" must a list, and their length must be the same.<br><br>
+		<td>Initialize list of variables. Both list mustn't be empty. "names" and "values" must a list, and their length must be the same.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
