@@ -11,10 +11,10 @@ import java.util.*;
 @DesignerComponent(version = 1,
                    versionName = "1.0",
                    helpUrl = "https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension",
-                   description = "This Extension is created to create dynamic variables. <br> Craeted by WatermelonIce <br><br> <b>My Profile in Kodular Community: </b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile</a><br><b>Support me by subscribing my YouTube Channel: </b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel</a>",
+                   description = "This Extension is created to create dynamic variables. <br> Created by WatermelonIce <br><br> <b>My Profile in Kodular Community: </b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile</a><br><b>Support me by subscribing my YouTube Channel: </b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel</a>",
                    category = ComponentCategory.EXTENSION,
                    nonVisible = true,
-                   iconName = "icon/profile.png")
+                   iconName = "aiwebres/extension.png")
 @SimpleObject(external = true)
 public class DynamicVariables extends AndroidNonvisibleComponent {
 
