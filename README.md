@@ -1,4 +1,4 @@
-# DynamicVariables-Kodular-AI2-Extension
+# DynamicVariables Extension
 Simple extension for adding dynamic variables in AI2 and its distributions.
 
 # Blocks
@@ -13,7 +13,7 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 		<td>
 			<img src = "assets/WhenErrorOccurred.png">
 		</td>
-		<td>Raises when any error occured. All errors explained in <a href="https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/blob/master/README.md#errors">Errors</a>. <br><br>
+		<td>Raises when any error occured.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -23,23 +23,14 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 				<td>error</td>
 				<td>String</td>
 			</tr>
-			<tr>
-				<td>errorCode</td>
-				<td>int</td>
-			</tr>
-			<tr>
-				<td>methodCode</td>
-				<td>int</td>
-			<tr>
 			</table>
 		</td>
-		<td align = "center">N/A</td>
 	</tr>
 	<tr>
 		<td>
 			<img src = "assets/Initialize.png">
 		</td>
-		<td>Initialize/Change a variable. "name" and "value" can be anything but not nothing. <br><br>
+		<td>Initialize a variable.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -55,13 +46,12 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 			</table>
 		</td>
-		<td align = "center">0</td>
-	</tr>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/InitializeListOfVariables.png">
 		</td>
-		<td>Initialize/Change list of variables. Both list mustn't be empty. "names" and "values" must a list, and their length must be the same. Variable(s) is/are initialize/change in assending way.<br><br>
+		<td>Initialize list of variables. Both list mustn't be empty. \"names\" and \"values\" must a list, and their length must be the same.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -77,13 +67,12 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 			</table>
 		</td>
-		<td align = "center">1</td>
-	</tr>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/Get.png">
 		</td>
-		<td><b>Returns: <i>Any</i></b><br>Get value of a variable. If the variable isn't exist, return "not found".<br><br>
+		<td><b>Returns: <i>Any</i></b><br>Get the value of a variable. If the variable doesn't exist, return null.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -95,13 +84,12 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 			</table>
 		</td>
-		<td align = "center">2</td>
-	</tr>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/GetListOfValues.png">
 		</td>
-		<td><b>Returns: <i>List</i></b><br>Get list of values. Input should be a list of variable's name. Output will a list of values in the order of input list. If any of the names isn't exist, that item will be "not found". If the input list is empty, or any error occurred, return an empty list.<br><br>
+		<td><b>Returns: <i>List</i></b><br>Get a list of values. The input should be a list of variable's names. If any of the variables doesn't exist, that item will be null. If the input list is empty, or any errors occurred, return an empty list.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -113,22 +101,36 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 			</table>
 		</td>
-		<td align = "center">3</td>
-	</tr>
+			</tr>
+	<tr>
+		<td>
+			<img src = "assets/GetNameByValue.png">
+		</td>
+		<td><b>Returns: <i>List</i></b><br>Get variables' names by its value. Return an empty list if there are no variables, or when error occured.<br><br>
+		<table>
+			<tr>
+				<th>Params</th>
+				<th>Type</th>
+			</tr>
+			<tr>
+				<td>value</td>
+				<td>Any</td>
+			</tr>
+			</table>
+		</td>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/GetAllNames.png">
 		</td>
-		<td><b>Returns: <i>List</i></b><br>Get all variable's names. Return an empty list if there's no variable, or when error occured.</td>
-		<td align = "center">4</td>
-	</tr>
+		<td><b>Returns: <i>List</i></b><br>Get all of the variable names. Return an empty list if there are no variables, or when error occured.</td>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/GetAllValues.png">
 		</td>
-		<td><b>Returns: <i>List</i></b><br>Get all values. Return an empty list if there's no variable, or when error occurred.</td>
-		<td align = "center">5</td>
-	</tr>
+		<td><b>Returns: <i>List</i></b><br>Get all of the values. Return an empty list if there are no variables, or when error occurred.</td>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/Rename.png">
@@ -149,13 +151,12 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 		</table>
 		</td>
-		<td align = "center">6</td>
-	</tr>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/RenameListOfVariables.png">
 		</td>
-		<td>Rename a list of varibles. All list must not be empty. Length of both list must be the same. This method will rename variable(s) in assending order. If any one of the oldName doesn't exist, error will occur, but the oldNames before the error occurred will be renamed.<br><br>
+		<td>Rename a list of varibles. All list must not be empty. Length of both list must be the same. If any one of the old names doesn't exist, error will occur.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -171,13 +172,12 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 		</table>
 		</td>
-		<td align = "center">7</td>
-	</tr>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/Remove.png">
 		</td>
-		<td><b>Returns: <i>Any</i></b><br>Remove a variable. Return removed value. If variable's name doesn't exist, error will occur and return an empty string.<br><br>
+		<td><b>Returns: <i>Any</i></b><br>Remove a variable and return removed value. If the variable doesn't exist, return null.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -189,13 +189,12 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 			</table>
 		</td>
-		<td align = "center">8</td>
-	</tr>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/RemoveListOfVariables.png">
 		</td>
-		<td><b>Returns: <i>List</i></b><br>Remove list of variables. Return a list of removed values. If any of variable's name doesn't exist, error will occur and return list of values that removed before the error occurred.<br><br>
+		<td><b>Returns: <i>List</i></b><br>Remove list of variables and return a list of removed values. If any of variable's name doesn't exist, that item of the list will be null.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -207,20 +206,18 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 			</table>
 		</td>
-		<td align = "center">9</td>
-	</tr>
+			</tr>
 	<tr>
 		<td>
 			<img src = "assets/RemoveAll.png">
 		</td>
-		<td>Remove all variables. If there's no variable exist, nothing will happen.</td>
-		<td align = "center">10</td>
+		<td>Remove all variables.</td>
 	</tr>
 	<tr>
 		<td>
-			<img src = "assets/IsVariableExist.png">
+			<img src = "assets/NameExist.png">
 		</td>
-		<td><b>Returns: <i>Boolean</i></b><br>Check if specific variable name exist. Return true of variable exists, otherwise false. Return false if error occurred.<br><br>
+		<td><b>Returns: <i>Boolean</i></b><br>Check if given variable name exists. Return true if variable exists, otherwise false. Return false if an error occurred.<br><br>
 		<table>
 			<tr>
 				<th>Params</th>
@@ -232,55 +229,46 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 			</tr>
 			</table>
 		</td>
-		<td align = "center">11</td>
 	</tr>
 	<tr>
 		<td>
-			<img src = "assets/NumOfVariables.png">
+			<img src = "assets/ValueExist.png">
 		</td>
-		<td><b>Returns: <i>Number (int)</i></b><br>Return the number of variables. Return -1 if error occurred.</td>
-		<td align = "center">12</td>
+		<td><b>Returns: <i>Boolean</i></b><br>Check if given value exists. Return true if value exists, otherwise false. Return false if an error occurred.<br><br>
+		<table>
+			<tr>
+				<th>Params</th>
+				<th>Type</th>
+			</tr>
+			<tr>
+				<td>value</td>
+				<td>Any</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src = "assets/Size.png">
+		</td>
+		<td><b>Returns: <i>Number (int)</i></b><br>Return the number of variables. Return -1 if an error occurred.</td>
 	</tr>
 	<tr>
 		<td>
 			<img src = "assets/IsEmpty.png">
 		</td>
-		<td><b>Returns: <i>Boolean</i></b><br>Check if any variables exist. Return true if no variable exists, otherwise false. If error occurred, return false.</td>
-		<td align = "center">13</td>
+		<td><b>Returns: <i>Boolean</i></b><br>Check if any variables exist. Return true if no variable exists, otherwise false. Return false if an error occurred.</td>
 	</tr>
 		</table>
 	
-# Errors
-
-<table>
-	<tr>
-		<th>Error Code</th>
-		<th>Error</th>
-	</tr>
-	<tr>
-		<td>0</td>
-		<td>Exception error</td>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>List cannot be empty</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>Length of both list must be same</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>Old variable doesn't exist</td>
-	</tr>
-</table>
-	
 # Change Log
-<small><i>No change log yet ;)</i></small>
-
-# Build Extensions
-Go to [this](https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/tree/master/BuildExtension) directory for the code. Check out the [wiki page](https://github.com/WaterMelonOof/DynamicVariables-Kodular-AI2-Extension/wiki/Compiling-Extension) if you don't know how to compile.
+## Version 2 (1.1)
+- Removed method code and error code; they are useless
+- Changed `NumOfVariables` to `Size`
+- Changed `IsVariableExist` to `NameExist`
+- Added `ValueExist`
+- Added `GetNameByValue`
+- Some methods return `"null"` instead of `"not found"`
 
 # Reference
-[Kodular Community](https://community.kodular.io/t/free-open-source-dynamic-variables-create-dynamic-variables/83592)
-[MIT AI2 Community](https://community.appinventor.mit.edu/t/free-open-source-dynamic-variables-create-dynamic-variables/16321)
+[Kodular Community](https://community.kodular.io/t/free-open-source-dynamic-variables-create-dynamic-variables/83592) | [MIT AI2 Community](https://community.appinventor.mit.edu/t/free-open-source-dynamic-variables-create-dynamic-variables/16321)
