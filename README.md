@@ -5,9 +5,8 @@ Simple extension for adding dynamic variables in AI2 and its distributions.
 
 <table style = "width:100%">
 	<tr>
-		<th width = "35%">Blocks</th>
-		<th width = "60%">Description</th>
-		<th width = "5%">Method Code</th>
+		<th>Blocks</th>
+		<th>Description</th>
 	</tr>
 	<tr>
 		<td>
