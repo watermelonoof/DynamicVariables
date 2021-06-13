@@ -1,6 +1,0 @@
-[submodule "BuildExtension/extension-template"]
-	path = BuildExtension/extension-template
-	url = https://github.com/mit-cml/extension-template.git
-[submodule "BuildExtension/appinventor-sources"]
-	path = BuildExtension/appinventor-sources
-	url = https://github.com/mit-cml/appinventor-sources.git
